@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>AquaTrack Simulator</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>AquaTrack - Water Management</h1>
+    
+    <div class="form-container">
+      
+      <input type="text" id="user" placeholder="Nome Utente">
+      <input type="number" id="liters" placeholder="Litri Consumati">
+      
+      <select id="type">
+        <option value="Domestic">Domestic</option>
+        <option value="Industrial">Industrial</option>
+      </select>
+
+      <button id="saveBtn">Salva Consumo</button>
+    </div>
+
+    <div class="display">
+      <table>
+        <thead>
+          <tr>
+            <th>Utente</th>
+            <th>Costo Totale (€)</th>
+          </tr>
+        </thead>
+        <tbody id="list">
+          <!-- I dati finiranno qui -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
